@@ -7,5 +7,5 @@
   - name: Install a package
     yum:
       name: "{{ package }}"
-      state: latest
+      state: absent
       
