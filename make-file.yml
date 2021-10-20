@@ -4,10 +4,10 @@
   tasks:
     - name: Create a file
       copy:
-        content: test
+        content: "Hola creadopor ansible"
         dest: /tmp/test.txt
         
     - name: Add content
       lineinfile:
         path: /tmp/test.txt
-        line: "Hola creado por Ansible"
+        line: "Línea añadida por Ansible"
