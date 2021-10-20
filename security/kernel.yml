@@ -1,5 +1,5 @@
 - name: Harden Linux kernel
-  hosts: "{{ target_hosts | default('linux') }}"
+  hosts: all
   become: yes
 
   vars:
