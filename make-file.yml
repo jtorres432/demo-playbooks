@@ -6,3 +6,8 @@
       copy:
         content: test
         dest: /tmp/test.txt
+        
+    - name: Add content
+      lineinfile:
+        path: /tmp/test.txt
+        line: "Hola creado por Ansible"
