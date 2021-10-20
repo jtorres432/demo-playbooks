@@ -4,7 +4,7 @@
   tasks:
     - name: Create a file
       copy:
-        content: "Hola creadopor ansible"
+        content: "Hola creado por ansible para MIT"
         dest: /tmp/test.txt
         
     - name: Add content
