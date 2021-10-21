@@ -3,7 +3,7 @@
   hosts: all
   tasks:
 
-#  - name: Copy form source to dest
+#  - name: Copy from source to dest
 #    copy:
 #      src: /var/lib/awx/projects/rpms/telnet-0.17-76.el8.x86_64.rpm
 #      dest: /root/rpms/
