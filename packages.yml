@@ -1,0 +1,22 @@
+---
+- name: Copy and install a rpms
+  hosts: all
+  tasks:
+
+#  - name: Copy form source to dest
+#    copy:
+#      src: /var/lib/awx/projects/rpms/telnet-0.17-76.el8.x86_64.rpm
+#      dest: /root/rpms/
+
+
+#  - name: Install rpms from local
+#    yum:
+#      name: /root/rpms/telnet-0.17-76.el8.x86_64.rpm
+#      state: present
+#      disable_gpg_check: yes
+
+  - name: Install rpms from url
+    yum:
+      name: http://mirror.centos.org/centos/8-stream/AppStream/x86_64/os/Packages/telnet-0.17-76.el8.x86_64.rpm
+      state: present
+      disable_gpg_check: yes
