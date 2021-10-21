@@ -7,7 +7,7 @@
   - name: Install a package
     yum:
       name: "{{ package }}"
-      state: absent
+      state: present
       
   - name: Upgrade S.O.
     yum:
