@@ -1,6 +1,6 @@
 ---
 - name: Print Process
-  hosts: test
+  hosts: all
   become: true
   tasks:
   - name: Print running process via ps
