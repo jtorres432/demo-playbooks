@@ -1,0 +1,20 @@
+---
+- name: Print Process
+  hosts: test
+  become: true
+  tasks:
+  - name: Print running process via ps
+    shell: "ps -fea | awk '{ print $8 }'"
+    register: process
+
+  - name: Show ps process
+    debug:
+      msg: "{{process}}"
+      
+  - name: Print process via systemctl
+    shell:
+    register: processctl
+    
+  - name: Show systemctl process
+    debug:
+      msg: "{{process}}"
