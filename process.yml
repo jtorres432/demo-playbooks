@@ -12,9 +12,9 @@
       msg: "{{process}}"
       
   - name: Print process via systemctl
-    shell:
-    register: processctl
+    shell: systemctl status
+    register: systemctl
     
   - name: Show systemctl process
     debug:
-      msg: "{{process}}"
+      msg: "{{systemctl}}"
