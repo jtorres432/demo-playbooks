@@ -9,9 +9,5 @@
       name: "{{ package }}"
       state: present
       
-  - name: Upgrade S.O.
-    yum:
-      state: latest
-      name: '*'
-      exclude: kernel*
-      
+
+     
