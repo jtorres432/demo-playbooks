@@ -1,6 +1,7 @@
 - name: Run yum updates
   hosts: all
   become: yes
+  tasks:
   
   - name: Upgrade S.O.
     yum:
