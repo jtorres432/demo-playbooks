@@ -8,5 +8,5 @@
       async: 90
       poll: 0
       
-    - name: Reboot using reboot module
-      reboot:
+#    - name: Reboot using reboot module
+#     reboot:
