@@ -7,3 +7,6 @@
       shell: sleep 2 && shutdown -r now
       async: 90
       poll: 0
+      
+    - name: Reboot using reboot module
+      reboot:
