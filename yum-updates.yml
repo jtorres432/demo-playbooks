@@ -1,7 +1,7 @@
 - name: Run yum updates
   hosts: all
   become: yes
-
+  
   - name: Upgrade S.O.
     yum:
       state: latest
